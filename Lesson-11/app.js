@@ -1,12 +1,9 @@
 //  Задание 1:
 
 function changeArr(arr) {
-    var newArr = [];
 
-    arr.map(function(item) {
-        var obj = {};
-        obj.name = item;
-        newArr.push(obj);
+    var newArr = arr.map(function(item) {
+        return {'name': item};
     });
 
     return newArr;
@@ -61,16 +58,19 @@ getVowelNumber('Hi! My name is Kate.');
 function changeText(text) {
 
     var textArr = text.split(/[.!?]/);
-    textArr.pop();
 
     textArr.forEach(function(item, i) {
 
-        console.log(item.trim() + ' ' + item.split(/[,\s]/).join('').length);
+        if (item.length < 1) {
+            textArr.splice(i, 1);
+        } else {
+            console.log(item.trim() + ' ' + item.split(/[,\s]/).join('').length);
+        }
 
     });
 };
 
-changeText('В лесу родилась ёлочка, в лесу она росла. Зимой и летом стройная? Зелёная была! Или росла? Да.');
+changeText('В лесу родилась ёлочка, в лесу она росла. Зимой и летом стройная? Зелёная была! Или росла? Да');
 
 
 
