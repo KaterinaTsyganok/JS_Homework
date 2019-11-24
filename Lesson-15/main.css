@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    height: 50px;
+    width: 200px;
+    border: 2px solid rgb(41, 41, 88);
+    text-align: left;
+    padding-left: 20px;
+}
+
+#add {
+    text-align: center;
+}
