@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container {
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.stopwatch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.stopwatch div {
+    height: 60px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 50px;
+}
+
+#button-save {
+    margin-top: 10px;
+}
+
+.value-wrapper {
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
